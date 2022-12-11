@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <title>sushi day</title>
+
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    </head>
+
+
+    <!--SOLUTION: The best workaround is to embed the full SVG into the HTML markup and 
+            reference each sprite using its target. And not create a new folder "social-icons.svg" with all the icons from sprites.com-->
+            <svg width="0" height="0" class="hidden">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 24" id="logo">
+                    <g fill="none" fill-rule="evenodd">
+                      <path fill="var(--logo-color, #242D52)" fill-rule="nonzero" d="M40.014 16.809V8.553c0-1.577.366-2.82 1.098-3.73.733-.91 1.65-1.365 2.75-1.365 2.158 0 3.237 1.577 3.237 4.731v8.62h3.782v-9.58c0-2.415-.5-4.22-1.503-5.417C48.376.615 46.945.017 45.084.017c-1.222 0-2.34.234-3.352.703a6.833 6.833 0 00-2.56 2.043h-.066C38.126.932 36.486.017 34.184.017c-.969 0-1.902.217-2.799.653a6.976 6.976 0 00-2.353 1.878h-.05V.265H25.2v16.527h3.782V8.553c0-1.577.372-2.82 1.115-3.73.743-.91 1.693-1.365 2.849-1.365 2.19 0 3.286 1.577 3.286 4.731v8.62h3.782zm21.101.248c2.246 0 3.997-.827 5.252-2.482h.05v2.217h3.616V.265h-3.782V2.25h-.066C64.93.761 63.23.017 61.082.017a7.76 7.76 0 00-5.681 2.415c-.705.75-1.26 1.66-1.668 2.73a9.589 9.589 0 00-.611 3.44c0 1.258.203 2.416.61 3.475.408 1.059.964 1.952 1.669 2.68a7.348 7.348 0 002.535 1.696 8.325 8.325 0 003.18.604zm.595-3.441c-1.399 0-2.538-.466-3.419-1.398-.88-.932-1.321-2.132-1.321-3.599 0-1.555.454-2.804 1.362-3.747.909-.943 2.04-1.414 3.394-1.414 1.343 0 2.458.493 3.345 1.48.886.988 1.33 2.215 1.33 3.681 0 1.467-.455 2.667-1.363 3.599-.909.932-2.018 1.398-3.328 1.398zm27.112 3.193V7.064c0-2.393-.536-4.166-1.61-5.319C86.14.593 84.655.017 82.762.017a7.373 7.373 0 00-3.056.645 6.958 6.958 0 00-2.477 1.87h-.05V.264h-3.782v16.527h3.782V8.487c0-1.588.388-2.823 1.164-3.706.777-.882 1.814-1.323 3.113-1.323.595 0 1.104.077 1.528.231.424.155.796.406 1.115.753.32.348.556.819.71 1.415.154.595.231 1.323.231 2.183v8.769h3.782zm10.218.248c2.246 0 3.996-.827 5.252-2.482h.05v2.217h3.616V.265h-3.782V2.25h-.066C102.855.761 101.154.017 99.007.017a7.76 7.76 0 00-5.682 2.415c-.704.75-1.26 1.66-1.668 2.73a9.589 9.589 0 00-.61 3.44c0 1.258.203 2.416.61 3.475.408 1.059.964 1.952 1.668 2.68a7.348 7.348 0 002.536 1.696 8.325 8.325 0 003.179.604zm.594-3.441c-1.398 0-2.538-.466-3.418-1.398-.881-.932-1.322-2.132-1.322-3.599 0-1.555.455-2.804 1.363-3.747.908-.943 2.04-1.414 3.394-1.414 1.343 0 2.458.493 3.344 1.48.886.988 1.33 2.215 1.33 3.681 0 1.467-.455 2.667-1.363 3.599-.908.932-2.018 1.398-3.328 1.398zm19.07 10.125c1.2 0 2.274-.14 3.22-.422.947-.281 1.743-.673 2.387-1.175a6.385 6.385 0 001.602-1.844 8.14 8.14 0 00.916-2.383c.188-.86.281-1.803.281-2.829V.265h-3.782v1.737h-.066a7.059 7.059 0 00-2.353-1.49A7.62 7.62 0 00118.142 0c-1.508 0-2.862.358-4.062 1.075-1.2.717-2.134 1.713-2.8 2.987-.666 1.273-.999 2.705-.999 4.293 0 1.61.35 3.038 1.049 4.285.699 1.246 1.66 2.203 2.882 2.87 1.222.667 2.598 1.001 4.129 1.001 2.047 0 3.716-.673 5.004-2.018h.066v1.753c0 1.17-.43 2.14-1.288 2.912-.86.772-2.07 1.158-3.634 1.158-1.068 0-2.006-.132-2.816-.397-.809-.265-1.742-.678-2.799-1.24l-.892 3.341c.925.552 1.966.976 3.122 1.274 1.156.298 2.356.447 3.6.447zm.132-10.72c-1.365 0-2.491-.434-3.377-1.3-.887-.865-1.33-2.026-1.33-3.482 0-1.4.435-2.542 1.305-3.425.87-.882 2.004-1.323 3.402-1.323 1.332 0 2.442.435 3.328 1.307.886.871 1.33 2.002 1.33 3.391 0 1.401-.433 2.556-1.297 3.466-.864.91-1.985 1.365-3.361 1.365zm19.086 4.036c1.542 0 2.899-.281 4.071-.844 1.173-.562 2.133-1.323 2.882-2.283l-2.642-2.266c-1.035 1.301-2.406 1.952-4.113 1.952-1.21 0-2.237-.337-3.08-1.01-.842-.672-1.384-1.593-1.627-2.762h12.024c.066-.397.099-.9.099-1.506 0-1.599-.325-3.027-.975-4.285a7.198 7.198 0 00-2.807-2.961c-1.222-.717-2.632-1.075-4.228-1.075a8.191 8.191 0 00-3.188.62c-.99.414-1.844.99-2.56 1.729-.715.739-1.277 1.638-1.684 2.696-.407 1.06-.611 2.212-.611 3.458 0 1.688.369 3.185 1.106 4.492.738 1.307 1.746 2.308 3.023 3.003 1.277.695 2.714 1.042 4.31 1.042zm3.815-10.274h-8.257c.264-1.059.776-1.878 1.535-2.457.76-.579 1.663-.868 2.709-.868 1.057 0 1.93.298 2.618.893.688.596 1.153 1.406 1.395 2.432z"></path>
+                      <g fill="#F3603C">
+                        <path d="M2.786 10.286c1.538 0 2.785 1.279 2.785 2.857C5.571 14.72 4.324 16 2.786 16 1.247 16 0 14.72 0 13.143c0-1.578 1.247-2.857 2.786-2.857zM2.786 0C4.324 0 5.57 1.28 5.57 2.857c0 1.578-1.247 2.857-2.785 2.857C1.247 5.714 0 4.435 0 2.857 0 1.28 1.247 0 2.786 0zm10.028 0C14.353 0 15.6 1.28 15.6 2.857c0 1.578-1.247 2.857-2.786 2.857-1.538 0-2.785-1.279-2.785-2.857C10.029 1.28 11.276 0 12.814 0z"></path>
+                        <ellipse cx="12.814" cy="13.257" opacity=".5" rx="2.786" ry="2.857"></ellipse>
+                      </g>
+                    </g>
+                </symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" id="icon-facebook">
+                    <image id="Facebook" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmDAsOJg2pyeqsAAAB4UlEQVRIx6WVT0hUURTGf+866EJRslnkgJBOBJWlZOAiG5JCC7KNOxe5b9myjUS0KAQNsk0tFPcu2iSJi2olBOE/KCQlLBRRyyYw0PpazLP0vXOdwfne4j7u+b5zzzv3nXMCYaCcdjKc4zhHCVjnM9O85RU/DK6izwkNaFUWNjSo01F+VH5f+fDI7yClybxySZpSveXglNYKkktSVs1RB0n9LFguSTuqzSmD8BZmaLCugyeMs8JvoJWBfZYF0v9v4Z7nnI49GTofsz7e/YRjHvnovnyfNRh1IgH0YmM8XCvIUEKzwXhANyrTL08Et8Oz7xyQzEpHB2WeCKrDtRY/bia4ahoW2ORT+D7Fe0QFJw3eFfTaDO1arEZumLx3jnozgiC2U2PyUo4jpiFeuEmTV5nwJOchXxhiDIAuevhDk01M8J1yY/8i8CF00EKn9xayjkWvcSNc1/Fj2TFNMZh1TBTlYMLxkp0iHLxwbDFyaPko3xz+asyPu+CAJfoOJX/GR/71xHnjP+8KbbfMKviqQOQaCkAbi0T/yh7SBIg28/zL5Nrpnp5XeF/e1iVrsKQ1W5B8Xmf8o60/r/ypSg+ajahRz5U1pVsa1oUoPzDHe5LrZGggRRUBmywzxxvGWIlT/wKprBNztbZ0iwAAAABJRU5ErkJggg=="></image>
+                </symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" id="icon-instagram">
+                    <image id="Instagram" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmDAsOJQNlXJRoAAACiklEQVRIx5WVT0hUURjFf/OYkaicGMoEFWnCVOyvaTsLqTAhaG1Jm0DaBW6CLFq0CNxUoi20wmmRSbgqiKhskQSVC0MQ0YRETQsU/2ap5Wkxd8b7xjc5fZeB+517zpnvve++e33CI9Kp4CgH2MV2YIpheuniJfMeXCWOQjVqUl4xqUYVJvIT5fXaKOqTG4TVs6FcknoU9jI4rLmU5JI0p+JEgxytpCyXpBXluA2G/ksuSUO2wR3X0gfVKF9BBeQzI6Cg9uiC3rl4t2MGYRd8zdSUoVztNiNXGQa97OKGowZtFvREqEAfPYue1UGhiIW0CRR0kdLlS/I6a9UkaavSXGgQVVvpqFCVlQ/qoSLqlzQthKQ6oc8Wo9rPCWtfjwCHzHyV87SZeRURmgDIBkbIiytO+im2DJaANDMvp4vjXMThPu184T0APuCXpdiHZqyCXgk1SJIeCdXE8UtCDyRJLUJPLcW4Q8D1aUb/AxqBljjeYH6x1bUIOnjHaAoIAA6/rWzNvxSYiGfTBlkf8w7D604YgKtAJTMALHAKuJ7wkNEYd/hkpX4wFR3hCr2EOMs50ummljIwq35L0efwxkq3AAtmfpMIubTzmCzuccugPwwrFp0oZDVlSqjctVXHNObKTwtNWHkIoQ4L2C/UnfQM6BXKs/IO4RPkMxAvqZ8i4AYV7GATsSavssQkndQBPfHNDgUMRr/yZsv1tXauO+pjI6TnFrNZRCsAGCPbejXP6OYbP/lj2uawmUxKOWO18Cs5prEi4clSi7zEY71MyymLl1XmdbEUaSAl+YCKkl1tAd3dUN6kwL/uRlSiVi16ShfVqpJEvs/zes+kkmPsJYttwCzj9PGWF3xfT/0L8fJmxmlSz7sAAAAASUVORK5CYII="></image>
+                </symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" id="icon-twitter">
+                    <image id="Twitter" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmDAsOJjWBy1IyAAACD0lEQVRIx52VT0hUURTGv/cq04oZzIFCRqg0pJSCNIQiFxVhmxazaVHQskVBLYOKCGmTC2uhREbgskWLFkUELapVIEhmi5pCpT8TleKkEOXQr4XOMPe8+5iZzlvdc77vO4fzzj03QB5bryPq1S5tUZMCzWpGE3qhJ/rpwWK/Nm7wDZ/NMcROi7f0firZ9XiBZl5WpAO8YptPYAc/qqIDLNBlBVIsVk0HKNDiCryuiQ7woVzgas10gJtFgc3/RQfYikJJV1TZHqhfw5qTJE2pOH3XJLGW30Z3yDS0wMGVTm1kgAyPKJRiCXHM0POIbkf0jDM6qxhhvhQ7GeqwKfavpDF16GHJM+LE00oqUTodEs8irTm9kms/g4wzzTqnglsOdkx8NPTvPKWtjLCBOkfgnoP+slqNkY6fUFB2WjTRtHNKhBF6ShnlYn9nvfbYffDJMyBn2RTZE8vfcYPMhZry5OlTfUwFl8w5F2rCA6vTjJd+Tp3GMyky3imf5iKtpvweD+6UaGDJKzFOu0Pfyx8PqlGIu44rywX20WCyn/cmub98nVsc5zyj9NHEGoRI0sNl3uK39uJCGfAEZ3nHe/LE2+3ylZalVvtMUC6QjmllvG23a72rhr28xAHfw9LKZFX0LB3xT9tgRfqwe72j12U3d1jwUn8xSrfFB97nPaWj6lWnmpVUoLxyeqPneqyvUeg/x9AaUuFTlEAAAAAASUVORK5CYII="></image>
+                </symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" id="icon-whatsapp">
+                    <image id="WhatsApp" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfmDAsOJymM0T88AAACZUlEQVRIx5WVTWyMURSG35mgEbQZnQSNYaoV9deGIUTosokIiVo0TSUVSQkLCyIWXZUI8RNKikj9JoKks5SIWJWFikj6o8EQhLYTtCltNHR4LDpT373fN2Z6vs2c977nvfeeueccH/KwaapQuUoVVr586tcHdapVD/Tdg4v9FXOWz3jZAE0ssfl2+BEy2Yn0AgW0ZQwHaGeBl8BivmYVDjBExBYIMpx1OECCkCnQ6aK8ZD/FCDGDCu641t86BRpcyzsQIkwlNaxDiAAPLU5jSmC2tTBICHGAuAO7xxzEeYtZOCZw0YLDyPP/qEI0G8htJHL4aYDViKcAjLgkViAGDSRXbDGAOKIagDqCvHJdTlQZyHZxzgAOIoaALoTY7DrDJkTC4V/zq8wojbuapemSfkiSfrtKZ6+kZw5/ufho7JDa9Q/zEe2uE8QQVxx+r18Ba4/JkiSfopJ2uU7gl5Rw+Ll+izBTHclfEZ1Sm1arX9JW7VOvJKlHUqHZDz6ZWUUO7zRClCBECIA9ySSnrE88MgQ6rIf9mLXJaqlP5ihi8J+LJitNa5D1hN7RwhMAapD1Nm6KSkugiHy87SjikIXViqmMOoDXiCgDHOeWQYyzDbHTJRoQ4qoDOIyYl7x1HnVc4joNrEeIY67w6Fg1hsaBYSYhSqinmxZKx9tdDrt573GpRamGcjL1rmg0iL94Qzdf0uTksrOlxZio9eBzCsw1UpmNLbTb+soJ9OVRNngNliK6sgqPsTT9aDuTMfwCU/43G0UZzUa5/LMRbrDK5vs8x3tQG1WuZSpQnnz6pj69UKvuK+6m/gUJgsnrDEgtzwAAAABJRU5ErkJggg=="></image>
+                  </symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.344 21.25" id="email-Icon">
+                    <path id="Email_Icon" d="M168.774,6564.27l-10.469,8.92-10.47-8.92a1.039,1.039,0,0,0-1.42.09,0.947,0.947,0,0,0,.09,1.37l11.136,9.48a1.04,1.04,0,0,0,1.329,0l11.134-9.48a0.947,0.947,0,0,0,.09-1.37,1.039,1.039,0,0,0-1.42-.09h0Zm0,0,2.677-4.13H145.158a2.974,2.974,0,0,0-3.018,2.92v15.42a2.972,2.972,0,0,0,3.018,2.91h26.293a2.972,2.972,0,0,0,3.017-2.91v-15.42a2.973,2.973,0,0,0-3.017-2.92h0Zm1,18.34a0.992,0.992,0,0,1-1,.97H145.158a0.993,0.993,0,0,1-1.006-.97v-15.42a0.986,0.986,0,0,1,1.006-.97h26.293a0.986,0.986,0,0,1,1,.97v15.42Zm0,0" transform="translate(-142.125 -6560.16)"></path>
+                </symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.156 28.66" id="address-Icon">
+                    <path id="Address_Icon" d="M157.842,6599.86a11.068,11.068,0,0,0-11.079,11.03c0,4.35,1.828,8.75,5.286,12.72a27.9,27.9,0,0,0,5.25,4.72,1,1,0,0,0,1.087,0,27.911,27.911,0,0,0,5.249-4.72c3.459-3.97,5.286-8.37,5.286-12.72a11.068,11.068,0,0,0-11.079-11.03h0Zm0,26.43c-2.037-1.51-9.092-7.33-9.092-15.4a9.093,9.093,0,0,1,18.185,0c0,8.07-7.056,13.89-9.093,15.4h0Zm0,0,0-19.78a4.38,4.38,0,1,0,4.4,4.38,4.4,4.4,0,0,0-4.4-4.38h0Zm0,6.78a2.4,2.4,0,1,1,2.41-2.4,2.4,2.4,0,0,1-2.41,2.4h0Zm0,0" transform="translate(-146.75 -6599.84)"></path>
+                </symbol>
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.688 27.72" id="phone-Icon">
+                    <path id="Phone_Icon" d="M167.958,6515.74a12.852,12.852,0,0,0-9.013-3.63,0.98,0.98,0,1,0,0,1.96,10.817,10.817,0,0,1,7.585,3.06,10.218,10.218,0,0,1,3.142,7.37,1.01,1.01,0,0,0,2.02,0,12.132,12.132,0,0,0-3.734-8.76h0Zm-4.154,8.76a1.01,1.01,0,0,0,2.02,0,6.8,6.8,0,0,0-6.879-6.69,0.985,0.985,0,1,0,0,1.97,4.8,4.8,0,0,1,4.859,4.72h0Zm0,0-2.235,5.01a3.062,3.062,0,0,0-2.7,1.57,0.971,0.971,0,0,0,.263,1.37,1.033,1.033,0,0,0,1.4-.26,1.1,1.1,0,0,1,.919-0.72,13.075,13.075,0,0,1,4.661,3.32,1,1,0,0,1-.009.72,3.412,3.412,0,0,1-1.731,2.12,3.314,3.314,0,0,1-2.595-.08,28.718,28.718,0,0,1-9.364-5.93c0-.01,0-0.01,0-0.01a27.674,27.674,0,0,1-6.085-9.09,3.084,3.084,0,0,1-.087-2.53,3.456,3.456,0,0,1,2.179-1.68,1.093,1.093,0,0,1,.735-0.01,12.678,12.678,0,0,1,3.416,4.53c0.015,0.27-.088.47-0.738,0.9a0.958,0.958,0,0,0-.264,1.36,1.022,1.022,0,0,0,1.4.26,2.968,2.968,0,0,0,1.616-2.63c-0.087-1.57-3.226-5.72-4.726-6.26a3.11,3.11,0,0,0-2.086-.01,5.4,5.4,0,0,0-3.372,2.73,4.923,4.923,0,0,0,.053,4.08,29.514,29.514,0,0,0,6.53,9.74,0.039,0.039,0,0,0,.021.02,30.424,30.424,0,0,0,10.009,6.34,6.043,6.043,0,0,0,2.256.46,4.745,4.745,0,0,0,1.944-.4,5.344,5.344,0,0,0,2.8-3.28,2.9,2.9,0,0,0-.01-2.03c-0.553-1.46-4.826-4.51-6.442-4.6h0Zm0,0" transform="translate(-144 -6512.09)"></path>
+                </symbol>
+              </svg>
+    <!--end of SVG section-->
+
+
+    <body>
+        <header class="header">
+                <div class="nav-wrapper">
+                    <a href="#" aria-label="home">
+                        <img class="logo" src="pics/logo.png">
+                    </a>
+                    <nav class="primary-navigation">
+                        <ul aria-label="Primary" role="list" class="nav-list">
+                            <li><a href="#">Our Menu</a></li>
+                            <li><a href="#">Deals</a></li>
+                            <li><a href="#">About Our Food</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Locate</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="social-wrap">
+                    <div>
+                        <ul class="social-list" role="list" aria-label="Social links">
+                            <li>
+                                <a aria-label="instagram" href="#">
+                                    <svg class="social-icon">
+                                        <use xlink:href="#icon-instagram"></use>
+                                      </svg>
+                                </a> 
+                            </li>
+                            <li>
+                                <a aria-label="facebook" href="#">
+                                    <svg class="social-icon">
+                                        <use xlink:href="#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a aria-label="twitter" href="#">
+                                    <svg class="social-icon">
+                                        <use xlink:href="#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a aria-label="whatsapp" href="#">
+                                    <svg class="social-icon">
+                                        <use xlink:href="#icon-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>  
+                    </div>                       
+                </div>       
+        </header>
+
+        <section class="hero">
+            <h1 id="headline">NO.1 <br/>
+                                SUSHI IN TOWN</h1>
+            <p class="hero-text">"Lorem ipsum dolor sit amet,
+                <br/>consectetur adipiscing elit,<br/>
+                sed do eiusmod tempor incididunt <br/>
+                ut labore et dolore magna aliqua."</p>
+            <button class="btn">Lorem Ipsum</button>
+            <img class="img-hero" src="pics/img-hero.png">
+            </section>
+        
+        <section class="part-1">
+            <div class="part-1-text">
+                <h2 class="title">LOREM IPSUM</h2>
+                <h3 class="subtitle">NO.1 <br/>
+                    SUSHI IN TOWN</h3>
+                <p class="part-1-paragraph">
+                    “Lorem ipsum dolor sit amet,<br/>
+                    consectetur adipiscing elit,<br/>
+                    sed do eiusmod tempor incididunt<br/>
+                    ut labore et dolore magna aliqua.”</p>
+            </div>
+            <img class="green-right" src="pics/green.png">
+            <img class="sushis-chopsticks-left" src="pics/sushis-chopsticks.png" >
+        </section>
+
+        <section class="red-gallery red-rectangle">
+            <div class="red-gallery-unit">
+                <div class="red-gallery-circle"></div>
+                <h3 class="red-gallery-title">LOREM IPSUM</h3>
+                <p class="red-gallery-text">
+                    Lorem ipsum dolor sit amet,<br/>
+                    consectetur adipiscing elit,<br/>
+                    sed do eiusmod tempor incididunt </p>
+            </div>   
+            <div class="red-gallery-unit">
+                <div class="red-gallery-circle"></div>
+                <h3 class="red-gallery-title">LOREM IPSUM</h3>
+                <p class="red-gallery-text">
+                    Lorem ipsum dolor sit amet,<br/>
+                    consectetur adipiscing elit,<br/>
+                    sed do eiusmod tempor incididunt </p>
+            </div>   
+            <div class="red-gallery-unit">
+                <div class="red-gallery-circle"></div>
+                <h3 class="red-gallery-title">LOREM IPSUM</h3>
+                <p class="red-gallery-text">
+                    Lorem ipsum dolor sit amet,<br/>
+                    consectetur adipiscing elit,<br/>
+                    sed do eiusmod tempor incididunt </p>
+            </div>   
+        </section>
+
+        <section class="cards-section">
+            <div class="container">
+                <h2 class="title-three-cards">LOREM IPSUM</h2>
+                <div class="three-cards-block">
+                    <div class="card-unit">      
+                        <div class="card-container">
+                            <img class="pic-card" src="pics/card-sushi-1.png">
+                            <h3 class="card-text card-text-title">LOREM IPSUM<br/>DOLOR SIT AMET</h3>
+                            <p class="card-text card-text-p">
+                            Lorem ipsum dolor sit amet,<br/>
+                            consectetur adipiscing elit,<br/>
+                            sed do eiusmod tempor incididunt. 
+                            </p>
+                            <button class="btn btn-cards">Lorem</button>
+                        </div>          
+                    </div>
+                    <div class="card-unit">
+                        <div class="card-container">
+                            <img class="pic-card" src="pics/card-sushi-2.png">
+                            <h3 class="card-text card-text-title">LOREM IPSUM<br/>DOLOR SIT AMET</h3>
+                            <p class="card-text card-text-p">
+                            Lorem ipsum dolor sit amet,<br/>
+                            consectetur adipiscing elit,<br/>
+                            sed do eiusmod tempor incididunt. 
+                            </p>
+                            <button class="btn btn-cards">Lorem</button>
+                        </div>
+                    </div>
+                    <div class="card-unit">
+                        <div class="card-container">
+                            <img class="pic-card" src="pics/card-sushi-1.png">
+                            <h3 class="card-text card-text-title">LOREM IPSUM<br/>DOLOR SIT AMET</h3>
+                            <p class="card-text card-text-p">
+                            Lorem ipsum dolor sit amet,<br/>
+                            consectetur adipiscing elit,<br/>
+                            sed do eiusmod tempor incididunt. 
+                            </p>
+                            <button class="btn btn-cards">Lorem</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="cards-section-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br/>
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br/>
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                </p>
+            </div>
+        </section>
+
+        <section class="article-1">
+            <img class="pic-article-1" src="pics/onesushi-chopsticks.png">
+            <div class="text-content-article-1">
+                <h2 class="title-article-1">LOREM IPSUM <br/>
+                DOLOR SIT AMET</h2>
+                <p class="text-article-1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>
+                sed do eiusmod tempor incididunt ut labore et dolore <br/>
+                magna aliqua. Ut enim ad minim veniam, quis nostrud <br/>
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo <br/>
+                consequat. Duis aute irure dolor in reprehenderit in <br/>
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br/>
+                Excepteur sint occaecat cupidatat non proident, sunt in <br/>
+                culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <button class="btn btn-article-1">Lorem Ipsum</button>
+            </div>
+        </section>
+
+        <section class="app-section">
+            <img class="app-section-left-leave" src="pics/app-section-left-leave.png">
+            <img class="app-section-right-leave" src="pics/app-section-right-leave.png">
+            <img class="app-section-smartphone" src="pics/smartphone.png">
+            <div class="app-section-text">
+                <h2 class="app-section-title">
+                    FIRST SUSHI <br/>
+                    DELIVERY APP <br/>
+                    IN TOWN
+                </h2>
+                <ul class="app-section-list">
+                    <li>• Lorem ipsum dolor sit amet, consectetur <br/>
+                        adipiscing elit, sed do eiusmod tempor.</li>
+                    <li>• Incididunt ut labore et dolore magna aliqua.</li>
+                    <li>• Ut enim ad minim veniam, quis nostrud <br/>
+                        exercitation ullamco laboris nisi ut aliquip ex ea <br/>
+                        commodo consequat. Duis aute irure dolor in.</li>
+                    <li>• Reprehenderit in voluptate velit esse cillum <br/>
+                        dolore eu fugiat nulla pariatur. Excepteur sint <br/> 
+                        occaecat cupidatat non proident, sunt in culpa <br/>
+                        qui officia deserunt mollit anim id est laborum.</li>
+                </ul>
+                <div class="delivery-part">
+                    <p class="delivery-part-text">DELIVERY</p>
+                    <p class="delivery-part-number">012345</p>
+                </div>
+                <div class="download-part">
+                    <p class="download-part-title">DOWNLOAD AVAILABLE ON</p>
+                    <ul class="rectangles">
+                        <div class="rectangle rectangle-2"></div>
+                        <div class="rectangle rectangle-2"></div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="about-us-text">
+                <h2 class="about-us-title">ABOUT US</h2>
+                <p class="about-us-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur <br/>
+                    adipiscing elit, sed do eiusmod tempor <br/>
+                    incididunt ut labore et dolore magna <br/>
+                    aliqua. Ut enim ad minim veniam, quis <br/>
+                    nostrud exercitation ullamco laboris nisi <br/>
+                    ut aliquip ex ea commodo consequat. <br/>
+                    Duis aute irure dolor in reprehenderit in <br/>
+                    voluptate velit esse cillum dolore eu fugiat <br/>
+                    nulla pariatur. Excepteur sint occaecat <br/>
+                    cupidatat non proident, sunt in culpa qui <br/>
+                    officia deserunt mollit anim id est <br/>
+                    laborum.
+                </p>
+                <ul class="about-us-contact">
+                    <li>
+                        <svg class="contact-icon">
+                            <use xlink:href="#phone-Icon"></use>
+                        </svg>
+                        <p class="about-us-contact-text">+01 24 5678 91011</p>
+                    </li>
+                    <li>
+                        <svg class="contact-icon">
+                            <use xlink:href="#email-Icon"></use>
+                        </svg>
+                        <p class="about-us-contact-text">work@myemail.com</p>
+                    </li>
+                    <li>
+                        <svg class="contact-icon">
+                            <use xlink:href="#address-Icon"></use>
+                        </svg>
+                        <p class="about-us-contact-text">Your Address Here</p>
+                    </li>
+                </ul>
+            </div>
+            <img class="about-us-pic" src="pics/multiple-foods.png">
+        </section>
+
+        <section class="social-media-post">
+            <h2 class="social-media-post-title">SOCIAL MEDIA POST</h2>
+            <div class="social-media-gallery">
+                <a><img class="social-media-post-pic pic-1" src="pics/social-media-post-1.png"></a>
+                <a><img class="social-media-post-pic pic-2" src="pics/social-media-post-2.png"></a>
+                <a><img class="social-media-post-pic pic-3" src="pics/social-media-post-3.png"></a>
+            </div>
+        </section>
+
+        <footer class="footer-wrapper">
+            <div class="footer-wrapper-content">
+                    <div class="footer-nav-about">
+                    <h4 class="footer-nav-about-title">ABOUT</h4>
+                    <p class="footer-nav-about-paragraph">
+                        Lorem ipsum dolor sit amet, consec <br/>
+                        adipisicing ipsam, magni non <br/>
+                        natus blanditiis suscipit <br/>
+                        ultimam quantum
+                    </p>
+                </div>
+                <div class="footer-nav-grid">
+                    <nav class="footer-nav footer-nav-1">
+                        <h4 class="footer-nav-title">Lorem Ipsum</h4>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-nav footer-nav-2">
+                        <h4 class="footer-nav-title">Lorem Ipsum</h4>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer-nav footer-nav-3">
+                        <h4 class="footer-nav-title">Lorem Ipsum</h4>
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                            <li><a href="#">Lorem Ipsum</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="footer-gray-rectangle"></div>
+            
+        </footer>
+
+    </body>
+</html>
